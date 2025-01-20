@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/final_logo" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:text="Lessons"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Lesson Content Section -->
+    <ScrollView
+        android:id="@+id/lesson_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/buttonsArea"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Level 1 -->
+            <TextView
+                android:id="@+id/level_1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 1: Logic Formulation and Problem Solving"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/level_1_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:text="Activity: Logic Formulation and Problem Solving\nObjective: Develop students' ability to logically analyze problems and formulate structured solutions.\n\nWhat Is Logic Formulation?\nLogic formulation is the process of breaking down a problem into smaller, manageable components and creating step-by-step solutions. It involves thinking systematically to understand relationships and dependencies.\n\nSteps in Logic Formulation:\n1. Identify the problem: Clearly understand what needs to be solved.\n2. Analyze the problem: Break it into smaller parts and determine the inputs, outputs, and constraints.\n3. Devise a plan: Outline the steps to solve the problem.\n4. Execute the plan: Follow the steps methodically.\n5. Evaluate the solution: Verify that the solution meets the requirements.\n\nExample: Planning a Morning Routine\n1. Wake up.\n2. Brush your teeth.\n3. Take a shower.\n4. Get dressed.\n5. Eat breakfast.\n6. Leave for school or work.\n\nProblem-Solving Techniques:\n1. Divide and Conquer: Break the problem into smaller parts and solve each part separately.\n2. Trial and Error: Test different solutions until the correct one is found.\n3. Pattern Recognition: Identify recurring patterns to simplify the problem.\n4. Abstraction: Focus on the essential details, ignoring irrelevant aspects.\n\nActivity Example:\nProblem: You need to organize a group study session.\n1. Decide on a date and time.\n2. Select a topic to study.\n3. Invite participants.\n4. Arrange a venue or virtual platform.\n5. Prepare study materials.\n6. Conduct the session.\n\nTakeaway:\nLogic formulation and problem-solving are foundational skills for programming and everyday decision-making. Practicing these skills helps build structured thinking and efficient solution design."
+                android:textColor="@android:color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/buttonGobackTutor1"
+            android:layout_width="147dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/scrollView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="108dp"
+            android:text="Go Back"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/buttonNextTutor1"
+            android:layout_width="151dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/scrollView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="109dp"
+            android:layout_toEndOf="@+id/buttonGobackTutor1"
+            android:text="Next Tutorial" />
+
+    </LinearLayout>
+
+</RelativeLayout>

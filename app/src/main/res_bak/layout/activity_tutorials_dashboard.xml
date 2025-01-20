@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorialsDashboard">
+
+    <!-- Title Text -->
+
+    <!-- Vertical Layout for Level Buttons -->
+
+    <!-- Go Back Button -->
+
+    <TextView
+        android:id="@+id/textTutorials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="Tutorials"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoBackLvlDB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTutorials"
+        app:layout_constraintVertical_bias="0.28">
+
+        <!-- Level 1 Button -->
+
+        <Button
+            android:id="@+id/buttonGoToTutor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Tutorial 1" />
+
+        <!-- Level 2 Button -->
+        <Button
+            android:id="@+id/buttonGoToTutor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Tutorial 2" />
+
+        <!-- Level 3 Button -->
+        <Button
+            android:id="@+id/buttonGoToTutor3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Tutorial 3" />
+
+        <!-- Level 4 Button -->
+        <Button
+            android:id="@+id/buttonGoToTutor4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Tutorial 4" />
+
+        <Button
+            android:id="@+id/buttonGoToTutor5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Tutorial 5" />
+
+        <Button
+            android:id="@+id/buttonGoToTutor6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Tutorial 6" />
+
+        <Button
+            android:id="@+id/buttonGoToTutor7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Tutorial 7" />
+
+        <Button
+            android:id="@+id/buttonGoToTutor8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Tutorial 8" />
+
+        <!-- Level 5 Button -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGoBackTutorDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Go Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

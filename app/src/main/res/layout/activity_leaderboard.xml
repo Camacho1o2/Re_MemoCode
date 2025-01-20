@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <TextView
+        android:id="@+id/textViewLeaderboardLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Level"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Leaderboard"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/leaderboardList"
+        android:layout_width="match_parent"
+        android:layout_height="544dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/buttonGoBackLeaderBoard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Go Back"
+        android:background="@drawable/background_with_border_507dbc"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>

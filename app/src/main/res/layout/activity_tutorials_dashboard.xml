@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderboardDashboard"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textTutorials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="Tutorials"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Go Back Button -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="152dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTutorials">
+
+        <!-- Level 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonGoToLevel1Tutorial"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_with_border_0d1a30"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Level 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonGoToLevel2Tutorial"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_with_border_0d1a30"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Level 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonGoToLevel3Tutorial"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_with_border_0d1a30"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Level 4 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonGoToLevel4Tutorial"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_with_border_0d1a30"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+        <!-- Level 5 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonGoToLevel5Tutorial"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/background_with_border_0d1a30"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Level 6 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonGoToLevel6Tutorial"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/background_with_border_0d1a30"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Level 7 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonGoToLevel7Tutorial"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/background_with_border_0d1a30"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Level 8 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonGoToLevel8Tutorial"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/background_with_border_0d1a30"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnGoBackTutorialsDB"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/background_with_border_507dbc"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Go Back"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

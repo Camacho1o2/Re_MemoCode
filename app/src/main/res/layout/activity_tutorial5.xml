@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/final_logo" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:text="Lessons"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Lesson Content Section -->
+    <ScrollView
+        android:id="@+id/lesson_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/buttonsArea"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Level 1 -->
+            <TextView
+                android:id="@+id/level_1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Level 5: Arranging Code for Conditionals and Loops "
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/level_1_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:text="Part 1: Understanding Conditionals - Odd or Even Check\n\nWhat Are Conditionals?\n\nConditionals are statements that allow a program to take different actions based on whether a condition is True or False.\n\nExample Explanation:\n\nTo check if a number is odd or even, we use the modulus operator %:\n- If number % 2 == 0, the number is even.\n- Otherwise, the number is odd.\n\nTask:\n\nArrange the following code correctly to determine whether a number is odd or even.\n\n```python\nnumber = int(input('Enter a number: '))\nif number % 2 == 0:\n    print(f'{number} is Even')\nelse:\n    print(f'{number} is Odd')\n```\n\nSteps to Follow:\n\n1. Accept input from the user.\n2. Use the condition number % 2 == 0 to check if it’s even.\n3. Use the else block to print if the number is odd.\n\n\nPart 2: Understanding Loops - For Loop\n\nWhat Is a For Loop?\n\nA for loop allows you to repeat a block of code for each item in a sequence (e.g., a list).\n\nExample:\n\nIterate over a list of names and print each name:\n\n```python\nnames = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]\nfor name in names:\n    print(name)\n```\n\nTask:\n\nArrange the following code fragments to create a functional for loop:\n- for name in names:\n- print(name)\n- names = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]\n\nSteps to Follow:\n\n1. Define the list of names.\n2. Use a for loop to iterate through the list.\n3. Print each name.\n\n\nPart 3: Understanding While Loops\n\nWhat Is a While Loop?\n\nA while loop repeatedly executes a block of code as long as a condition is True.\n\nExample:\n\nPrint numbers from 0 to 4 using a while loop:\n\n```python\ncount = 0\nwhile count &lt; 5:\n    print(&quot;Count is:&quot;, count)\n    count += 1  # Increment the count\n```\n\nTask:\n\nArrange the following fragments to form a valid while loop:\n- count += 1 # Increment the count\n- count = 0\n- print(&quot;Count is:&quot;, count)\n- while count &lt; 5:\n\nSteps to Follow:\n\n1. Initialize the count variable.\n2. Use a while loop with the condition count &lt; 5.\n3. Print the count and increment it inside the loop."
+                android:textColor="@android:color/black"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/buttonGobackTutor5"
+            android:layout_width="147dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/scrollView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="108dp"
+            android:text="Go Back"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/buttonNextTutor5"
+            android:layout_width="151dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/scrollView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="109dp"
+            android:layout_toEndOf="@+id/buttonGobackTutor5"
+            android:text="Next Tutorial" />
+
+    </LinearLayout>
+
+</RelativeLayout>

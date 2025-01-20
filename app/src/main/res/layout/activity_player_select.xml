@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Select a Player"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <!-- RecyclerView for Player List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playerRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical" />
+
+    <!-- Content above the buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- Select Player Button -->
+        <TextView
+            android:id="@+id/selectPlayerButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_with_border_507dbc"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Select Player"
+            android:textColor="#000000"
+            android:textSize="16sp" /> <!-- Added margin between buttons -->
+
+        <!-- Delete Player Button -->
+        <TextView
+            android:id="@+id/deletePlayerButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_with_border_507dbc"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Delete Player"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textAddPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Add Player:"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/inputPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter your name..."
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- Add Player Button -->
+        <TextView
+            android:id="@+id/addPlayerButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_with_border_507dbc"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Add Player"
+            android:textColor="#000000"
+            android:textSize="16sp" /> <!-- Added margin between buttons -->
+
+        <!-- Go Back Button -->
+        <TextView
+            android:id="@+id/goBackButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_with_border_507dbc"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Go Back"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

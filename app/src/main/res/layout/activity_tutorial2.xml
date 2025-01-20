@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/final_logo" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:text="Lessons"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Lesson Content Section -->
+    <ScrollView
+        android:id="@+id/lesson_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/buttonsArea"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Level 2 -->
+            <TextView
+                android:id="@+id/level_2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 2: Understanding Algorithms and Pseudocode"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/level_2_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activity: Understanding Algorithms and Pseudocode\nObjective: Introduce students to algorithms and pseudocode through clear definitions and relatable examples.\n\nWhat Are Algorithms?\nAlgorithms are step-by-step instructions for solving a problem or accomplishing a task. They can be applied in various contexts, from daily routines to complex programming challenges.\n\nExample Algorithm:\n1. Turn on your computer.\n2. Open your email application.\n3. Log in with your credentials.\n4. Check for new emails.\n5. Read and respond to important messages.\n6. Log out and close the application.\n\nKey Features of Algorithms:\n1. Clear and unambiguous steps.\n2. Finite: Every algorithm must end after a certain number of steps.\n3. Logical order of operations.\n\nWhy Learn Algorithms?\nAlgorithms are the foundation of computer science and are crucial for solving problems efficiently. They help break down tasks into manageable steps and guide coding solutions.\n\nWhat Is Pseudocode?\nPseudocode is a plain-language description of an algorithm. It doesn’t follow strict programming syntax but provides a framework to understand the logic of a solution before actual implementation.\n\nExample Pseudocode for Sending a Text Message:\nSTART\nUnlock your phone.\nOpen the messaging app.\nSelect a contact.\nType your message.\nPress send.\nEND\n\nBenefits of Pseudocode:\n1. Simplifies complex problems into easy-to-understand steps.\n2. Allows programmers to focus on logic without worrying about syntax.\n3. Acts as a bridge between problem-solving and coding.\n\nTakeaway:\nUnderstanding algorithms and pseudocode equips learners with essential skills for planning and implementing efficient solutions to problems, whether in daily life or programming."
+                android:textSize="19sp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/buttonGobackTutor2"
+            android:layout_width="147dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/scrollView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="66dp"
+            android:text="Go Back"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/buttonNextTutor2"
+            android:layout_width="151dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/scrollView3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="67dp"
+            android:layout_toEndOf="@+id/buttonGobackTutor2"
+            android:text="Next Tutorial" />
+
+    </LinearLayout>
+
+</RelativeLayout>

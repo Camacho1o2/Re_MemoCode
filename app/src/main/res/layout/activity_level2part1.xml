@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/levelTitleLevel2Part1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:paddingStart="16dp"
+            android:text="LEVEL 2"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/progressTextLevel2Part1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Progress: 0%"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/starsContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/star1Level2Part1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star2Level2Part1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star3Level2Part1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="8dp"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <!-- Timer -->
+    <TextView
+        android:id="@+id/timerTextLevel2Part1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Time: 00:00"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <!-- Instructions -->
+
+    <!-- Scrollable Drop Area -->
+
+    <TextView
+        android:id="@+id/questionTextLevel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Arrange the steps of ordering food in the correct sequence."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:contentDescription="Content area with questions and answers.">
+
+        <LinearLayout
+            android:id="@+id/drop_areaLevel2Part1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Dragged items will dynamically appear here -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Scrollable Drag Items -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Drag Items -->
+        <TextView
+            android:id="@+id/drag_item_wait_part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_with_border_507dbc"
+            android:padding="8dp"
+            android:text="Wait for your order to be served."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/drag_item_place_order_part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_with_border_507dbc"
+            android:padding="8dp"
+            android:text="Place your order at the counter."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/drag_item_look_menu_part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_with_border_507dbc"
+            android:padding="8dp"
+            android:text="Look at the menu to decide what you want."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/drag_item_walk_counter_part1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_with_border_507dbc"
+                android:padding="8dp"
+                android:text="Walk to the counter."
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/drag_item_pay_part1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_with_border_507dbc"
+                android:padding="8dp"
+                android:text="Pay for the food."
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/drag_item_eat_food_part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/background_with_border_507dbc"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="Eat your food."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultTextLevel2Part1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Results:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/buttonGoBackLevel2Part1"
+            android:layout_width="67dp"
+            android:layout_height="57dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_go_back"
+            android:contentDescription="Go Back"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/buttonClearAreaLevel2Part1"
+            android:layout_width="107dp"
+            android:layout_height="77dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Proceed"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_clear_area" />
+
+        <ImageButton
+            android:id="@+id/buttonRunLevel2Part1"
+            android:layout_width="111dp"
+            android:layout_height="77dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Proceed"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_run" />
+
+        <ImageButton
+            android:id="@+id/buttonProceedLevel2Part1"
+            android:layout_width="67dp"
+            android:layout_height="57dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_proceed"
+            android:contentDescription="Proceed"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</LinearLayout>

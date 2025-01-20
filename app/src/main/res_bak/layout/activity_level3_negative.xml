@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayoutLevel3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Level3Negative">
+
+    <!-- Level Title -->
+    <TextView
+        android:id="@+id/level4Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Level 3: Basic Python Programming"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Timer Section with Icon -->
+    <LinearLayout
+        android:id="@+id/timerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Timer Icon -->
+        <ImageView
+            android:id="@+id/timerIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_timer" />
+
+        <!-- Timer Text -->
+        <TextView
+            android:id="@+id/timerTextLevel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="01:00"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Question -->
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="Arrange the code to check if a number is odd or even."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level4Title" />
+
+    <!-- Drop Area -->
+
+    <!-- Draggable Items Layout -->
+
+    <!-- Check Button -->
+
+    <LinearLayout
+        android:id="@+id/dropArea"
+        android:layout_width="383dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <GridLayout
+        android:id="@+id/draggableItemsLayout"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropArea">
+
+        <!-- Draggable Items (Python Code Snippets) -->
+        <TextView
+            android:id="@+id/draggableItem1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#87CEEB"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="correct"
+            android:text="number = int(input(&quot;Enter a number: &quot;))"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/draggableItem2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#98FB98"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="correct"
+            android:text="if number % 2 == 0:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/draggableItem3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#FFD700"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="incorrect"
+            android:text="print(f&quot;{number} is Odd&quot;)"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/draggableItem4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#FFD700"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="incorrect"
+            android:text="print(f&quot;{number} is Even&quot;)"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/draggableItem5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#FFD700"
+            android:gravity="center"
+            android:padding="8dp"
+            android:tag="incorrect"
+            android:text="else:"
+            android:textSize="14sp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/checkButtonLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Run"
+        app:layout_constraintEnd_toStartOf="@+id/buttonClearLevel3"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResultsLevel3" />
+
+    <Button
+        android:id="@+id/buttonGoBackLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Go Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkButtonLevel3"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <TextView
+        android:id="@+id/textShowResultsLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Results:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/draggableItemsLayout" />
+
+    <TextView
+        android:id="@+id/textResultsLevel3"
+        android:layout_width="374dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:text="     - RESULTS -"
+        app:layout_constraintTop_toBottomOf="@+id/textShowResultsLevel3"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <Button
+        android:id="@+id/buttonProceedLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toEndOf="@+id/buttonGoBackLevel3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClearLevel3"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <Button
+        android:id="@+id/buttonClearLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="132dp"
+        android:text="Clear Area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResultsLevel3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

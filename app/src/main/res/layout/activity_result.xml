@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <!-- Result Message -->
+    <TextView
+        android:id="@+id/resultTextLevel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="LEVEL COMPLETE"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Python Code Output -->
+
+    <!-- Stars Rating -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/star1Level2Part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Star"
+            android:src="@drawable/ic_star" />
+
+        <ImageView
+            android:id="@+id/star2Level2Part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Star"
+            android:src="@drawable/ic_star" />
+
+        <ImageView
+            android:id="@+id/star3Level2Part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Star"
+            android:src="@drawable/ic_star" />
+    </LinearLayout>
+
+    <!-- Success Message -->
+    <TextView
+        android:id="@+id/successMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Nice one!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Magnifying Glass Image -->
+
+    <!-- Restart Button -->
+    <ImageView
+        android:id="@+id/magnifyingGlass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Magnifying Glass"
+        android:src="@drawable/ic_magnifying_glass" />
+
+    <TextView
+        android:id="@+id/buttonNextLevel"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/background_with_border_507dbc"
+        android:gravity="center"
+        android:text="Next Level"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/restartButton"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/background_with_border_507dbc"
+        android:gravity="center"
+        android:text="Restart"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/mainMenuButton"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/background_with_border_507dbc"
+        android:gravity="center"
+        android:text="Menu"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>

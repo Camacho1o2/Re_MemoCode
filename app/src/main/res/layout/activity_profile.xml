@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <!-- User Profile Heading -->
+    <TextView
+        android:id="@+id/tv_profile_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- RecyclerView for Levels, Scores, and Stars -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_levels"
+        android:layout_width="370dp"
+        android:layout_height="587dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_profile_heading"
+        tools:listitem="@layout/item_level" />
+
+    <!-- Logout Button -->
+    <TextView
+        android:id="@+id/btn_logout"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/background_with_border_507dbc"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

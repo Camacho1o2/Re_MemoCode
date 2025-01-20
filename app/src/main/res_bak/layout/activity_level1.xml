@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/levelTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:paddingStart="16dp"
+            android:text="LEVEL 1"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/progressTextLevel1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Progress: 0%"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/starsContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/star1Level1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star2Level1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star3Level1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_below="@+id/navigationBar"
+        android:layout_marginTop="8dp"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <TextView
+        android:id="@+id/timerTextLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Time: 00:00"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <ScrollView
+        android:id="@+id/scrollableContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/timerTextLevel1"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/questionTextLevel1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="Question"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:id="@+id/answerSectionLevel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionTextLevel1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/buttonAnswer1Level1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="Answer 1"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/material_dynamic_primary60" />
+
+
+
+                <Button
+                    android:id="@+id/buttonAnswer2Level1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="Answer 2"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/material_dynamic_primary60"/>
+
+                <Button
+                    android:id="@+id/buttonAnswer3Level1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="Answer 3"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/material_dynamic_primary60"/>
+
+                <Button
+                    android:id="@+id/buttonAnswer4Level1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:text="Answer 4"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/material_dynamic_primary60"/>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/textResultsLevel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answerSectionLevel1"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:text="Results:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textShowResultsLevel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textResultsLevel1"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="- RESULTS -"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textShowResultsLevel1"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/proceedButtonLevel1"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Proceed to next level"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_proceed" />
+
+                <ImageButton
+                    android:id="@+id/goBackButtonLevel1"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Go back to main menu"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_go_back" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

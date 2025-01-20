@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_border_a1c6ea">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/final_logo" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:text="Lessons"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Lesson Content Section -->
+    <ScrollView
+        android:id="@+id/lesson_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/buttonsArea"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/level_4_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 4: Practicing Python Basics"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/lesson_4_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="19dp"
+                android:text="Activity: Practicing Python Basics\nObjective: Teach students basic Python syntax and logical operators through hands-on examples.\n\nIntroduction to Variables:\nIn Python, variables are used to store data values. They can hold different types of data like integers, strings, floats, booleans, and more.\n\nExample:\n# Declaring variables\nproduct = &quot;Laptop&quot; # String\nprice = 799.99 # Float\nin_stock = True # Boolean\nquantity = 15 # Integer\n\n# Printing values\nprint(&quot;Product:&quot;, product) # Output: Product: Laptop\nprint(&quot;Price:&quot;, price) # Output: Price: 799.99\nprint(&quot;In Stock:&quot;, in_stock) # Output: In Stock: True\nprint(&quot;Quantity Available:&quot;, quantity) # Output: Quantity Available: 15\n\nIntroduction to Operators:\nOperators in Python are used to perform operations on variables and values.\n\nArithmetic Operators:\nx = 20\ny = 6\n\n# Basic operations\nsum_result = x + y # Addition\nproduct = x * y # Multiplication\ndifference = x - y # Subtraction\nquotient = x // y # Integer Division\nremainder = x % y # Modulus\n\nprint(&quot;Sum:&quot;, sum_result) # Output: Sum: 26\nprint(&quot;Product:&quot;, product) # Output: Product: 120\nprint(&quot;Difference:&quot;, difference) # Output: Difference: 14\nprint(&quot;Quotient:&quot;, quotient) # Output: Quotient: 3\nprint(&quot;Remainder:&quot;, remainder) # Output: Remainder: 2\n\nComparison Operators:\nscore1 = 85\nscore2 = 90\n\n# Comparing scores\nis_equal = score1 == score2 # Equality\nis_not_equal = score1 != score2 # Inequality\nis_greater = score1 > score2 # Greater than\nis_less_or_equal = score1 = score2 # Less than or equal\n\nprint(&quot;Is Equal:&quot;, is_equal) # Output: Is Equal: False\nprint(Is Not Equal:&quot;, is_not_equal) # Output: Is Not Equal: True\nprint(&quot;Is Greater:&quot;, is_greater) # Output: Is Greater: False\nprint(&quot;Is Less or Equal:&quot;, is_less_or_equal) # Output: Is Less or Equal: True\n\nLogical Operators:\nis_logged_in = True\nhas_permission = False\n\n# Logical operations\ncan_access = is_logged_in and has_permission # Logical AND\ncan_view = is_logged_in or has_permission # Logical OR\naccess_denied = not is_logged_in # Logical NOT\n\nprint(&quot;Can Access:&quot;, can_access) # Output: Can Access: False\nprint(&quot;Can View:&quot;, can_view) # Output: Can View: True\nprint(&quot;Access Denied:&quot;, access_denied) # Output: Access Denied: False\n\nTakeaway:\nPracticing with variables and operators is a vital step in learning Python and understanding how programming logic works."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/buttonGobackTutor4"
+            android:layout_width="147dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/scrollView5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="66dp"
+            android:text="Go Back"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/buttonNextTutor4"
+            android:layout_width="151dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/scrollView5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="67dp"
+            android:layout_toEndOf="@+id/lesson_4_content"
+            android:text="Next Tutorial" />
+
+    </LinearLayout>
+
+</RelativeLayout>

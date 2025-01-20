@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Select a Player"
+        android:textSize="24sp" />
+
+    <!-- RecyclerView for Player List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playerRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical" />
+
+    <!-- Add Player Section -->
+    <Button
+        android:id="@+id/selectPlayerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Select Player" />
+
+    <Button
+        android:id="@+id/deletePlayerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Delete Player" />
+
+    <TextView
+        android:id="@+id/textAddPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Player:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/inputPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name..."
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/addPlayerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Player"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Go Back Button -->
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back" />
+
+</LinearLayout>

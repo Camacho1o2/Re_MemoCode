@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_with_border_a1c6ea"
+    android:gravity="center_vertical|center_horizontal">
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <!-- Level Title -->
+        <TextView
+            android:id="@+id/levelTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LEVEL 4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingStart="16dp"
+            android:textColor="#000000" />
+
+        <!-- Progress Percentage -->
+        <TextView
+            android:id="@+id/progressTextLevel4Part1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Progress: 0%"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <!-- Stars -->
+        <LinearLayout
+            android:id="@+id/starsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/star1Level4Part1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/star_outline"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:id="@+id/star2Level4Part1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/star_outline"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:id="@+id/star3Level4Part1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/star_outline"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="8dp"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <!-- Timer -->
+    <TextView
+        android:id="@+id/timerTextLevel4Part1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Time: 00:00"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <!-- Instructions -->
+    <TextView
+        android:id="@+id/questionTextLevel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fill in the blanks to fix the code and put the comments.\n\nThis is a Python program that demonstrates how to use variables and print their values."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:layout_marginBottom="20dp" />
+
+
+    <!-- Centered EditText -->
+    <EditText
+        android:id="@+id/codeSnippetLevel4Part1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:minLines="6"
+        android:padding="10dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="___ Declaring variables and assigning values\nname = Alice\nage = 25\nheight = 5.7\nisstudent = true\n\n___ Printing the values of the variables using the print() function\n\nprint(&quot;Name: &quot;, name)\nprint(&quot;Age: &quot;, ___)\n_____(&quot;Height: &quot;, height)\nprint(&quot;Is Student: &quot;, ________)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textShowResultLevel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Results:"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/textResultLevel4Part1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="19dp"
+        android:text="- Result -"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <!-- Spacer to push buttons to the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="3"/>
+
+    <!-- Buttons Area -->
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/buttonGoBackLevel4Part1"
+            android:layout_width="67dp"
+            android:layout_height="57dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_go_back"
+            android:contentDescription="Go Back"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/buttonClearAreaLevel4Part1"
+            android:layout_width="107dp"
+            android:layout_height="77dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Clear Area"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_clear_area" />
+
+        <ImageButton
+            android:id="@+id/buttonRunLevel4Part1"
+            android:layout_width="111dp"
+            android:layout_height="77dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Run"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_run" />
+
+        <ImageButton
+            android:id="@+id/buttonProceedLevel4Part1"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_proceed"
+            android:contentDescription="Proceed"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,291 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:gravity="center_vertical|center_horizontal">
+
+    <!-- Navigation Bar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/levelTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="16dp"
+            android:text="LEVEL 5"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/progressTextLevel5Part1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Progress: 0%"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/star1Level5Part1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star2Level5Part1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star3Level5Part1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/timerTextLevel5Part1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Time: 1:45"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/instructionsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Arrange the code and fill in the blank(s) to check if a number is odd or even:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Drag Items Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Scrambled Drag Items -->
+            <TextView
+                android:id="@+id/draggableItem1Level5Part1"
+                android:layout_width="281dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_yellow"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="8dp"
+                android:text="number = int(input('Enter a number: '))"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/draggableItem2Level5Part1"
+                android:layout_width="209dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_orange"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="8dp"
+                android:text="print(f'{number} is Odd')"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/draggableItem5Level5Part1"
+                android:layout_width="183dp"
+                android:layout_height="53dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_teal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="if number % 2 == 0:"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/draggableItem3Level5Part1"
+                    android:layout_width="191dp"
+                    android:layout_height="58dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_gray"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="8dp"
+                    android:text="print(f'{number} is Even')"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/draggableItem4Level5Part1"
+                    android:layout_width="67dp"
+                    android:layout_height="53dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_dark_green"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="8dp"
+                    android:text="____:"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/dropAreaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Drop Area:"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <!-- Drop Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="to scroll">
+
+
+        <LinearLayout
+            android:id="@+id/drop_area_Level5Part1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Dragged items will dynamically appear here -->
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Result Display -->
+    <TextView
+        android:id="@+id/resultTextLevel5Part1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Results: "
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Buttons Area (Positioned at the bottom) -->
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:id="@+id/buttonGoBackLevel5Part1"
+            android:layout_width="48dp"
+            android:layout_height="54dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Go Back"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_go_back_lv2" />
+
+        <ImageButton
+            android:id="@+id/buttonClearAreaLevel5Part1"
+            android:layout_width="114dp"
+            android:layout_height="77dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_clear_area"
+            android:contentDescription="Clear Area"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/buttonRunLevel5Part1"
+            android:layout_width="115dp"
+            android:layout_height="77dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_run"
+            android:contentDescription="Run"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/buttonProceedLevel5Part1"
+            android:layout_width="55dp"
+            android:layout_height="57dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Proceed"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_proceed_lv2" />
+    </LinearLayout>
+</LinearLayout>

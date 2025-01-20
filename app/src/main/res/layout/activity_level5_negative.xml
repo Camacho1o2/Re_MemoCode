@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F9FC"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/levelTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="Level 5: Coding Challenge"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timerTextLevel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="02:00"
+            android:textColor="#4A90E2"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/problemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_box"
+        android:padding="12dp"
+        android:text="Problem: Write a simple try block printing &quot;This is a try block&quot;."
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_box_light"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/codeInputLevel6"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:background="@drawable/rounded_box"
+            android:hint="Type your code here"
+            android:minHeight="100dp"
+            android:padding="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clearButtonLevel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button_secondary"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="Clear" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textShowResultsLevel5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:text="Results:" />
+
+    <TextView
+        android:id="@+id/resultTextLevel5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="40dp"
+        android:text="- Results - "
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/goBackButtonLevel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Go Back" />
+
+        <Button
+            android:id="@+id/runButtonLevel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Run" />
+
+        <Button
+            android:id="@+id/proceedButtonLevel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Proceed" />
+    </LinearLayout>
+</LinearLayout>

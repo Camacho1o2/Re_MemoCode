@@ -1,0 +1,279 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_with_border_a1c6ea"
+    android:gravity="center_vertical|center_horizontal">
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/levelTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LEVEL 5"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingStart="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/progressTextLevel5Part2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Progress: 0%"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/star1Level5Part2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star2Level5Part2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star3Level5Part2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/timerTextLevel5Part2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Time: 1:45"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/instructionsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Arrange the Sequence of Code: For Loop"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <!-- Drag Items Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/draggableItem1Level5Part2"
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_with_border_507dbc"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="8dp"
+                android:text="for name in names:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/draggableItem2Level5Part2"
+                android:layout_width="261dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_with_border_507dbc"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="names = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <!-- Scrambled Drag Items (For Loop Code) -->
+                <EditText
+                    android:id="@+id/draggableItem3Level5Part2"
+                    android:layout_width="114dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_with_border_507dbc"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="8dp"
+                    android:text="    print(____)"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/draggableItem4Level5Part2"
+                    android:layout_width="136dp"
+                    android:layout_height="52dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/background_with_border_507dbc"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="name = &quot;Alice&quot;"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/dropAreaText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Drop Area: "
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <!-- Drop Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="scroll drop area">
+
+        <LinearLayout
+            android:id="@+id/drop_area_Level5Part2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Dragged items will dynamically appear here -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Result Display -->
+
+    <!-- Results Section -->
+
+    <!-- Buttons Area (Positioned at the bottom) -->
+    <TextView
+        android:id="@+id/resultTextLevel5Part2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Results:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:id="@+id/buttonGoBackLevel5Part2"
+            android:layout_width="67dp"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Go Back"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_go_back" />
+
+        <ImageButton
+            android:id="@+id/buttonClearAreaLevel5Part2"
+            android:layout_width="114dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_clear_area"
+            android:contentDescription="Clear Area"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/buttonRunLevel5Part2"
+            android:layout_width="115dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_run"
+            android:contentDescription="Run"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/buttonProceedLevel5Part2"
+            android:layout_width="62dp"
+            android:layout_height="73dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Proceed"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_proceed" />
+    </LinearLayout>
+</LinearLayout>

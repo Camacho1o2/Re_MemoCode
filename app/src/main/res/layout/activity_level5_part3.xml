@@ -1,0 +1,320 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_with_border_a1c6ea"
+    android:gravity="top|center_horizontal">
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/levelTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="16dp"
+            android:text="LEVEL 5"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/progressTextLevel5Part3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Progress: 0%"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/star1Level5Part3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star2Level5Part3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+
+            <ImageView
+                android:id="@+id/star3Level5Part3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/star_outline" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="0" />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Timer Text -->
+        <TextView
+            android:id="@+id/timerTextLevel5Part3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:text="Time: 1:45"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+            <!-- Instruction Text -->
+            <TextView
+                android:id="@+id/instructionsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Arrange the Sequence of While Loop Code with the right indentation"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- ProgressBar -->
+
+            <!-- Drag Items Section -->
+
+            <TextView
+                android:id="@+id/dropAreaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Drop Area: "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="scroll drop area">
+
+                <!-- Scrollable Drop Area -->
+                <LinearLayout
+                    android:id="@+id/drop_area_Level5Part3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#D3D3D3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <!-- Dragged items will dynamically appear here -->
+                </LinearLayout>
+
+            </ScrollView>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Content area with questions and answers."
+                android:fadeScrollbars="false"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/draggableItem1Level5Part3"
+                        android:layout_width="265dp"
+                        android:layout_height="51dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/background_with_border_507dbc"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="[3 spaces]print(&quot;Count is:&quot;, count)"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <!-- Scrambled Drag Items (While Loop Code) -->
+                    <TextView
+                        android:id="@+id/draggableItem4Level5Part3"
+                        android:layout_width="206dp"
+                        android:layout_height="56dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/background_with_border_507dbc"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="[4 spaces]print(&quot;Count is:&quot;, count)"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/draggableItem5Level5Part3"
+                        android:layout_width="197dp"
+                        android:layout_height="55dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/background_with_border_507dbc"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="[3 spaces]count += 1"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/draggableItem3Level5Part3"
+                            android:layout_width="103dp"
+                            android:layout_height="59dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/background_with_border_507dbc"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="count = 0"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/draggableItem2Level5Part3"
+                            android:layout_width="158dp"
+                            android:layout_height="55dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/background_with_border_507dbc"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="[4 spaces]count += 1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/draggableItem6Level5Part3"
+                            android:layout_width="77dp"
+                            android:layout_height="69dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/background_with_border_507dbc"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:padding="8dp"
+                            android:text="while count &lt; 5:"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/resultsTextLevel5Part3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Results:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    <!-- Buttons Area (Always at the bottom) -->
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:id="@+id/buttonGoBackLevel5Part3"
+            android:layout_width="67dp"
+            android:layout_height="54dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Go Back"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_go_back" />
+
+        <ImageButton
+            android:id="@+id/buttonClearAreaLevel5Part3"
+            android:layout_width="114dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_clear_area"
+            android:contentDescription="Clear Area"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/buttonRunLevel5Part3"
+            android:layout_width="115dp"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_run"
+            android:contentDescription="Run"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/buttonProceedLevel5Part3"
+            android:layout_width="67dp"
+            android:layout_height="57dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Proceed"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_proceed" />
+    </LinearLayout>
+
+</LinearLayout>

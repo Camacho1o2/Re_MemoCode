@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Center the CardView on the screen -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="6dp"
+        android:padding="24dp"
+        android:radius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tabs for Create Account and Log In -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tabCreateAccount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="Create Account"
+                    android:textColor="#3E3E3E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/tab_selector_create_account" />
+
+                <TextView
+                    android:id="@+id/tabLogIn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="Log In"
+                    android:textColor="#9E9E9E"
+                    android:textSize="16sp"
+                    android:background="@drawable/tab_selector_log_in" />
+            </LinearLayout>
+
+            <!-- Create Account Form -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create Account"
+                    android:textColor="#3E3E3E"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Let’s get started by filling out the form below."
+                    android:textColor="#9E9E9E"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="Username"
+                    android:padding="12dp"
+                    android:textColor="#3E3E3E"
+                    android:textSize="16sp"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="Password"
+                    android:padding="12dp"
+                    android:textColor="#3E3E3E"
+                    android:textSize="16sp"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btnCreateAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/button_bg"
+                    android:text="Create"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

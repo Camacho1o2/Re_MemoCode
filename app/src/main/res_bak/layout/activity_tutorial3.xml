@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo_app" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:text="Lessons"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Lesson Content Section -->
+    <ScrollView
+        android:id="@+id/lesson_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/buttonsArea"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <!-- Level 3 -->
+            <TextView
+                android:id="@+id/level_3_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 3: Recognizing Coding Components"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/white"/>
+
+            <!-- Level 4 -->
+            <TextView
+                android:id="@+id/level_3_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Activity: Recognizing Coding Components\nObjective: Help learners identify key coding components such as literals, variables, and data types, building a strong foundation for programming.\n\nWhat Are Coding Components?\nCoding components are the building blocks of any programming language. Understanding their purpose and how they work is crucial for writing functional code.\n\nKey Components:\n1. Literals: Fixed values in a program, such as numbers, strings, or boolean values.\nExample: &quot;42&quot;, &quot;Programming is fun!&quot;, &quot;False&quot;.\n2. Variables: Named storage locations for data.\nExample: score = 95 (score is the variable storing the value 95).\n3. Data Types: Define the type of data being stored, such as integers, strings, floats, booleans, and lists.\nExample: x = 10 (integer), greeting = &quot;Hello!&quot; (string).\n4. Operators: Symbols or keywords that perform operations on variables and values.\nExample: *, >, and.\n\nExample Demonstration:\n# Defining literals and variables\nage = 25 # Integer literal stored in a variable\nname = &quot;John&quot; # String literal stored in a variable\nis_active = True # Boolean literal stored in a variable\n\n# Using variables\nprint(&quot;Name:&quot;, name) # Output: Name: John\nprint(&quot;Age:&quot;, age) # Output: Age: 25\nprint(&quot;Active user:&quot;, is_active) # Output: Active user: True\n\nTakeaway:\nUnderstanding the role of coding components lays the groundwork for more advanced programming concepts."
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/buttonGobackTutor3"
+            android:layout_width="147dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/scrollView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="66dp"
+            android:text="Go Back"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/buttonNextTutor3"
+            android:layout_width="151dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/scrollView4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="67dp"
+            android:layout_toEndOf="@+id/buttonGobackTutor3"
+            android:text="Next Tutorial" />
+
+    </LinearLayout>
+
+</RelativeLayout>

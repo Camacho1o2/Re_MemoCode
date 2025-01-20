@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:tag="block">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:text="Provide a 'Hello World' from code"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="01:00"
+        android:textSize="18sp" />
+
+    <!-- Empty slots -->
+    <LinearLayout
+        android:id="@+id/slot1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="25dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/slot2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="25dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+
+    <!-- Draggable items -->
+    <LinearLayout
+        android:id="@+id/parentslot1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/code_snippet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_blue_light"
+            android:padding="8dp"
+            android:tag="block"
+            android:text="def my_function():"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/parentslot2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+    <TextView
+        android:id="@+id/code_snippet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_light"
+        android:padding="8dp"
+        android:tag="block"
+        android:text="    return 'Hello, World!'"
+        android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Check Button -->
+    <Button
+        android:id="@+id/checkButtonLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="Check Answer" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_orange_light"
+        android:padding="12dp"
+        android:tag="block"
+        android:text="Results:"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/resultTextLevel5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:padding="12dp"
+        android:tag="block"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/proceedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="Proceed "
+        android:visibility="gone" />
+
+</LinearLayout>

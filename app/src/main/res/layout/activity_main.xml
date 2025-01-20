@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_border_a1c6ea"
+    tools:context=".MainActivity">
+
+    <!-- App Icon -->
+
+    <!-- Settings Icon -->
+    <ImageView
+        android:id="@+id/logoIcon"
+        android:layout_width="250dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/final_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settingsIcon"
+        android:layout_width="85dp"
+        android:layout_height="82dp"
+        android:layout_margin="16dp"
+        android:contentDescription="Settings Icon"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"/>
+
+    <!-- Show Players / Account Switch Button -->
+
+    <!-- Welcome Text -->
+
+    <!-- Buttons (Centering) -->
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Welcome to Re:MemoCode!!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoIcon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textWelcome"
+        app:layout_constraintVertical_bias="0.277">
+
+        <!-- New Game Button -->
+        <ImageButton
+            android:id="@+id/newGameButton"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background_black"
+            android:contentDescription="New Game"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_new_game" />
+
+        <!-- Continue Button -->
+        <ImageButton
+            android:id="@+id/continueButton"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background_blue"
+            android:contentDescription="Continue"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_continue" />
+
+        <!-- Leaderboards Button -->
+        <ImageButton
+            android:id="@+id/leaderboardsButton"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background_blue"
+            android:contentDescription="Leaderboards"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_leaderboards" />
+
+        <!-- Tutorials Button -->
+        <ImageButton
+            android:id="@+id/btnTutorials"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background_blue"
+            android:contentDescription="Tutorials"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_tutorials" />
+
+        <!-- Exit Button -->
+        <ImageButton
+            android:id="@+id/btnExit"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background_blue"
+            android:contentDescription="Exit"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_exit2" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
